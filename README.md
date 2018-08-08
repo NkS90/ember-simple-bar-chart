@@ -1,26 +1,20 @@
 # ember-simple-bar-chart
 
-This README outlines the details of collaborating on this Ember addon.
+Simple bar chart using d3.js and ember.js.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-simple-bar-chart`
-* `npm install`
+* `ember install ember-simple-bar-chart`
 
-## Running
+## Usage
+In your handlebars template add the below snippet:
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+`{{ember-bar-chart height=HEIGHT width=WIDTH data=ARRAY  barColor=HEX}}`
 
-## Running Tests
+`HEIGHT` - {INTEGER} Height of the chart.
+`WIDTH` -  {INEGER} Width of the chart
+`ARRAY` - {ARRAY} Array of objects consit of `label` and `value`.
+`HEX` - {HEX} Color code for the bars.
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+##Example
+`{{ember-bar-chart height=500 width=500 data=list  barColor=#d3d3d3}}`
